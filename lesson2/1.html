@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        /* Пример 1
+        1. Префиксный инкремент - переменная а увеличивается на 1 (становится 2)
+        2. Значение переменной а записывается в с (с=2)
+        3. alert выводит 2.
+        */
+        let a = 1; 
+        let b = 1;
+        let c;
+        let d;
+        c = ++a;
+        alert(c); // 2
+        
+        /* Пример 2
+        1. В переменную d записывается значение b (d=1).
+        2. Постфиксный икремент увеличивает b на 1 (b=2).
+        3. alert выводит 1.
+        */
+        d = b++;
+        alert(d); // 1
+        
+        /* Пример 3
+        1. Префиксный икремент увеличивает а на 1 (а=3)
+        2. 2+3=5, 5 записывается в с.
+        3. alert выводит 5.
+        */
+        c = 2 + ++a;
+        alert(c); // 5
+        
+        /* Пример 4
+        1. Постфиксный инкремент сначала возвращает старое значение b (2), потом увеличивает b на 1 (b=3)
+        2. 2+2=4, 4 записывается в d
+        3. alert выводит 4.
+        */
+        d = 2 + b++;
+        alert(d); // 4
+
+        alert(a); // 3
+        alert(b); // 3
+    </script>
+</body>
+</html>
