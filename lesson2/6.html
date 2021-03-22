@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let money = parseInt(prompt("Сколько рублей Вы хотите положить на счет?"));
+        if (isNaN(money)) {
+            alert("Нужно вводить число.");
+        }
+        switch (money % 10) {
+            case 1:
+                alert(`Ваша сумма в ${money} рубль успешно зачислена.`);
+                break;
+            case 2:
+            case 3:
+            case 4:
+                alert(`Ваша сумма в ${money} рубля успешно зачислена.`);
+                break;
+            case 0:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+                alert(`Ваша сумма в ${money} рублей успешно зачислена.`);
+        }
+    </script>
+</body>
+</html>
