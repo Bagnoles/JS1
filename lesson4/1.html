@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function numToObj(number) {
+            let obj = {
+                units: number % 10,
+                tens: (parseInt(number / 10)) % 10,
+                hundreds: parseInt(number / 100)
+            };
+            return obj;
+        }
+
+        let num = +prompt("Введите целое число от 0 до 999");
+        if (isNaN(num) || num < 0 || num > 999 || !Number.isInteger(num)) {
+            alert("Нужно вводить целое число в диапазоне от 0 до 999");
+            console.log({});
+        } else {
+            console.log(numToObj(num));
+        }
+
+    </script>
+</body>
+</html>
