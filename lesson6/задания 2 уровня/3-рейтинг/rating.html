@@ -40,7 +40,7 @@
         let goldenClass = 'golden';
 
         firstStar.addEventListener('mouseover', function() {
-            if (!firstStar.classList.contains('goldenClass')) {
+            if (!firstStar.classList.contains(goldenClass)) {
                 firstStar.classList.add(goldenClass);
             }
         });
@@ -48,6 +48,63 @@
         firstStar.addEventListener('mouseout', function() {
             firstStar.classList.remove(goldenClass);
         });
+
+        secondStar.addEventListener('mouseover', function() {
+            let el = secondStar;
+            while (el) {
+                if (!el.classList.contains(goldenClass)) {
+                    el.classList.add(goldenClass);
+                }
+                el = el.previousElementSibling;
+            }
+        });
+
+        secondStar.addEventListener('mouseout', function() {
+            secondStar.classList.remove(goldenClass);
+        });
+
+        thirdStar.addEventListener('mouseover', function() {
+            let el = thirdStar;
+            while (el) {
+                if (!el.classList.contains(goldenClass)) {
+                    el.classList.add(goldenClass);
+                }
+                el = el.previousElementSibling;
+            }
+        });
+
+        thirdStar.addEventListener('mouseout', function() {
+            thirdStar.classList.remove(goldenClass);
+        });
+
+        fourthStar.addEventListener('mouseover', function() {
+            let el = fourthStar;
+            while (el) {
+                if (!el.classList.contains(goldenClass)) {
+                    el.classList.add(goldenClass);
+                }
+                el = el.previousElementSibling;
+            }
+        });
+
+        fourthStar.addEventListener('mouseout', function() {
+            fourthStar.classList.remove(goldenClass);
+        });
+
+        fifthStar.addEventListener('mouseover', function() {
+            let el = fifthStar;
+            while (el) {
+                if (!el.classList.contains(goldenClass)) {
+                    el.classList.add(goldenClass);
+                }
+                el = el.previousElementSibling;
+            }
+        });
+
+        fifthStar.addEventListener('mouseout', function() {
+            fifthStar.classList.remove(goldenClass);
+        });
+
     </script>
 </body>
 </html>
